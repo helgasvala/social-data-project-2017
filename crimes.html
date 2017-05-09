@@ -37,7 +37,44 @@
   We fed information into a python SVM model, where each data point either belonged to the class Rape or Murder,
   then SVM training algorithm builds a model from the training dataset that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier.
   Then we used the test Data set to evalute the error of the Model. The result can be found below:
-
+  <br>
+  <br>
+  Let's start by running the SVM on data from Manhattan. The testing error there was 15.0%:
+  <br>
+  <br>
+  <img src="svmplots/manhattanSVM.png" alt="manhattansvm" height="380" width="780">
+  <br>
+  <br>
+  Next we run it on Bronx. The testing error there was 23.3%:
+  <br>
+  <br>
+  <img src="svmplots/bronxSVM.png" alt="bronxsvm" height="380" width="780">
+  <br>
+  <br>
+  Next we run it on Brooklyn. The testing error there was 26.1%:
+  <br>
+  <br>
+  <img src="svmplots/brooklynSVM.png" alt="brooklynsvm" height="380" width="780">
+  <br>
+  <br>
+   Then we have Queens. The testing error there was 25.1%:
+  <br>
+  <br>
+  <img src="svmplots/queensSVM.png" alt="queenssvm" height="380" width="780">
+  <br>
+  <br>
+  And finally we have Staten Island, where the testing error was: 21.4%:
+  <br>
+  <br>
+  <img src="svmplots/statenSVM.png" alt="statensvm" height="380" width="780">
+  <br>
+  <br>
+  <h3> Results </h3>
+  <br>
+  We can see from the data that there is no specific pattern on occurrences of rape and murder.  
+  There seems to be that the crimes are absolutely random since the model is not able to make 
+  any clustering of the crimes. When we look closer on the plots we notice some time zone gaps 
+  where there seem not to have occured any rapes or murders in 2015.
     </section>
 
   
